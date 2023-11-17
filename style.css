@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make sure the body takes up the full height of the viewport */
+  
+}
+
+#resumeTitles{
+    font-family: Verdana;
+    font-size: 20px;
+    display: block;
+    margin-left: 10px;
+}
+
+
+.About_Me{
+    text-align: center;
+    background-color: #ffffff;
+    margin: auto;
+}
+#about_title{
+    font-size:40px;
+
+    color: #776B5D;
+    font-weight: 900;
+ 
+}
+.About_Me .adeola{
+        border-radius: 50%; 
+        height: 200px;
+        display:block;
+        margin: auto;
+        border: 2px solid  #776B5D;
+         
+}
+
+.About_Me .aboutTXT{
+    margin: auto;
+    text-align:unset;
+    font-family: Calibri;
+    font-size: 15px;
+}
+
+
+
+
+.Education{ 
+    background-color: white;
+    height: 300px;
+}
