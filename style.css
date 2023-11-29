@@ -1,4 +1,91 @@
 body {
+    margin-top: 30px;
+    padding-top: 10px;
+    height: 100vh;
+    background-color: #F3EEEA;
+}
+
+.fakebody {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #24231f;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    position: relative;
+    color: #96897b;
+    color: #F3EEEA;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#hero {
+    height: 100%;
+    background: url('images/claudio-schwarz-3N-QY4VqvnQ-unsplash.jpg') no-repeat center/cover;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container{ 
+    text-align: center;
+     
+}
+.container h1 { 
+    font-size: 40px;
+}
+.container p { 
+    font-size: 30px;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    box-shadow: 0 0 20px 10px rgba(7, 7, 7, 0.05);
+    margin: 0 30px;
+    color: white;
+    border-radius: 50%;
+    background-color: #31302c;
+}
+.links a .fa-brands{
+    font-size: 40px;
+    line-height: 80px;
+}
+.links a::after{
+    content:''; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #B9967E, #F3EEEA);
+    
+}
+
+.About_Me {
     margin: 0;
     padding: 0;
     height: 100vh; /* Make sure the body takes up the full height of the viewport */
@@ -18,9 +105,9 @@ body {
     background-color: #ffffff;
     margin: auto;
 }
-#about_title{
-    font-size:40px;
 
+#about_title {
+    font-size: 50px;
     color: #776B5D;
     font-weight: 900;
  
@@ -44,7 +131,30 @@ body {
 
 
 
-.Education{ 
-    background-color: white;
-    height: 300px;
+.Education{
+    background-color: #ddc8bc;
+}
+
+.Certifications{
+    background-color:#ceb2a1;
+}
+.Education .listings,
+.Certifications .listings,
+.Experience .listings,
+.Projects .listings,
+.Skills .listings {
+    width: 800px;
+    font-size: 18px;
+}
+
+.Education .resumeTitle,
+.Certifications .resumeTitle,
+.Experience .resumeTitle,
+.Projects .resumeTitle,
+.Skills .resumeTitle {
+    color: #282723;
+    font-size: xx-large;
+    border-bottom: 3px solid #282723;
+    padding: 4px;
+    width: 200px; /* Set a fixed width for uniformity */
 }
