@@ -1,6 +1,18 @@
-.one{
-    background-color: aqua;
+/* Style for the container (optional) */
+.icon-container {
+    text-align: center;
+    margin-top: 50px;
 }
-.two{
-    background-color: brown;
+
+/* Style for the icon link */
+.icon-link {
+    text-decoration: none;
+    color: #333; /* Default color */
+    font-size: 24px;
+    transition: color 0.3s ease; /* Transition for smooth color change */
+}
+
+/* Change color on hover */
+.icon-link:hover {
+    color: #f39c12; /* New color on hover */
 }
