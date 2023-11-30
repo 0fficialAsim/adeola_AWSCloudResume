@@ -1,8 +1,1 @@
-<header class="header">
-    <nav class="navbar">    
-    <a href ="#"> Home</a>
-    <a href ="#"> Resume</a>
-    <a href ="#"> Projects</a>
-    <a href ="#"> Contact</a>
-    </nav>
-</header>
+<!-- <a  style ="color: #776B5D" href="https://www.linkedin.com/in/AdeolaAsim/"> www.linkedin.com/in/AdeolaAsim </a> --> 
