@@ -46,8 +46,6 @@ body {
 #hero {
     height: 100%;
     background: url('images/claudio-schwarz-3N-QY4VqvnQ-unsplash.jpg') no-repeat center/cover;
-  
-
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -76,7 +74,7 @@ body {
     text-decoration: none;
     box-shadow: 0 0 20px 10px rgba(7, 7, 7, 0.05);
     margin: 0 30px;
-    color: white;
+    color: #F3EEEA;
     border-radius: 50%;
     background-color: #31302c;
 }
@@ -108,7 +106,7 @@ body {
 
 #about_title {
     font-size: 40px;
-    color: #776B5D;
+    color: #ddc8bc;
     font-weight: 900;
 }
 
@@ -156,7 +154,7 @@ body {
 .Experience .listings,
 .Projects .listings,
 .Skills .listings {
-    width: 800px;
+    width: 100%;
     font-size: 18px;
 }
 
@@ -165,9 +163,9 @@ body {
 .Experience .resumeTitle,
 .Projects .resumeTitle,
 .Skills .resumeTitle {
-    color: black;
+    color: #31302c;
     font-size: xx-large;
-    border-bottom: 4px solid #282723;
+    border-bottom: 4px solid #776B5D;
     padding: 3px;
 }
 
