@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
 body {
     margin-top: 30px;
     padding-top: 10px;
@@ -29,7 +34,6 @@ body {
     font-size: 18px;
     position: relative;
     color: #96897b;
-    color: #F3EEEA;
     font-weight: 500;
     text-decoration: none;
     margin-right: 20px;
@@ -38,6 +42,7 @@ body {
 #hero {
     height: 100%;
     background: url('images/claudio-schwarz-3N-QY4VqvnQ-unsplash.jpg') no-repeat center/cover;
+  
 
     display: flex; 
     flex-direction: column;
@@ -86,50 +91,54 @@ body {
 }
 
 .About_Me {
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Make sure the body takes up the full height of the viewport */
-  
-}
-
-#resumeTitles{
-    font-family: Verdana;
-    font-size: 20px;
-    display: block;
-    margin-left: 10px;
-}
-
-
-.About_Me{
     text-align: center;
-    background-color: #ffffff;
-    margin: auto;
+    background-color: #31302c; /* #282723 */
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 0px;
 }
 
 #about_title {
-    font-size: 50px;
+    font-size: 40px;
     color: #776B5D;
     font-weight: 900;
- 
-}
-.About_Me .adeola{
-        border-radius: 50%; 
-        height: 200px;
-        display:block;
-        margin: auto;
-        border: 2px solid  #776B5D;
-         
 }
 
-.About_Me .aboutTXT{
+.About_Me .adeola {
+    border-radius: 50%;
+    border-style: double;
+    height: 200px;
+    display: block;
     margin: auto;
-    text-align:unset;
-    font-family: Calibri;
-    font-size: 15px;
+    border: 2px solid #776B5D;
 }
 
+.About_Me .aboutTXT {
+    text-align: unset;
+    font-size: 16px;
+    color: #ddc8bc;
+    height: 20%;
+    width: 60%;
+}
 
-
+.Education,
+.Certifications,
+.Experience,
+.Projects,
+.Skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30%;
+    padding: 30px;
+    background-color: #B9967E;
+    color: #282723;
+}
 
 .Education{
     background-color: #ddc8bc;
@@ -152,7 +161,7 @@ body {
 .Experience .resumeTitle,
 .Projects .resumeTitle,
 .Skills .resumeTitle {
-    color: #282723;
+    color: black;
     font-size: xx-large;
     border-bottom: 3px solid #282723;
     padding: 4px;
