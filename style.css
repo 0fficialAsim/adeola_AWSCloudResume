@@ -53,7 +53,7 @@ body {
     
 
 }
-h4{
+h3{
     margin-bottom: 0px;
 }
 .container{ 
@@ -149,6 +149,12 @@ h4{
     background-color: #ddc8bc;
 }
 
+h5{
+    margin-top: 3px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
 .Certifications{
     background-color:#ceb2a1;
 }
@@ -157,9 +163,9 @@ h4{
 .Experience .listings,
 .Projects .listings,
 .Skills .listings {
-    width: 800px;
+    width: 700px;
     font-size: 18px;
-    margin-right: 10%;
+    margin-right: 10px;
 }
 
 .Education .resumeTitle,
@@ -171,6 +177,7 @@ h4{
     font-size: xx-large;
     border-bottom: 4px solid #776B5D;
     padding: 3px;
+    margin-left: 10px;
 }
 
 

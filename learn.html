@@ -27,14 +27,25 @@
             
             <p id="ph1Para">So my cloud journey begins! Phase 1 started off by creating a simple webpage and making it look fancy with HTML/CSS/JS. Prior to taking on this challenge, I had little to no experience with those 3 languages. 
                                 The resources I used heavily were Youtube, ChatGPT, and looking at other websites so I could quickly pick up the syntax, mostly for CSS as it was finicky to use</p>
-            <div class="Codeimgs"> <img src="images\htmlcode.png" style="height:433px;"> </img> <img src="images\csscode.png" style="height:433px;"> </img></div>
+            <div class="Codeimgs"> <img src="images\htmlcode.png" style="height:433px; border-radius: 5px;"> </img> <img src="images\csscode.png" style="height:433px; border-radius: 5px;"> </img></div>
             <p class="subscript-text" style="font-size: smaller;"><i>  (HTML) & (CSS) </i></p>
             
             <p id="ph1Para">
                 In terms of the AWS Services used, I first learned about Amazon S3 which would allow me to store my webpage files. It is a service that allows for secured storage of data on a large scale. Next, I would need to use AWS Route 53 in order to buy my custom domain name you see in the search bar (adeolainthecloud.com). Simply put Route 53 is a managed DNS (Domain Name System) which stores the collection of rules and records of domains that help clients understand how to reach a server through URLs. Lastly, to increase the speeds of the web page response time, and make it more secure I used a CloudFront Distribution. CloudFront is a Content Delivery Network (CDN) that significantly improves the read performance by using edge location caching. With that being said, let's host my website!
                  </p>
-            <p id="ph1Para">
-                Concepts Learned: <i> Domain Name Servers Protocol, Amazon S3, CloudFront, Route 53, HTTPS </i></p>
+            <ul> 
+            <li id= "ph1Para">Put my files into an S3 Bucket and adjust the policies so that it can be publicly accessible.  </li>
+            <li id= "ph1Para">After purchasing my domain on route 53, I would need to get it certified it with the Amazon Certificate Manager (ACM) </li>
+                 <ul>
+                    <li id= "ph1Para" >When a user connects to a webpage, the webpage will send over its SSL certificate which contains the public key necessary to start the secure session.
+                        The two computers, the client and the server, then go through a process called an SSL/TLS handshake, which is a series of back-and-forth communications used to establish a secure connection.  </li>
+                    </li>
+                 </ul>
+            <li> Create my CloudFront distribution which points to my S3 bucket, it would also ensure that viewers access the website through HTTPS.
+            </li>
+            <li>Connect my domain name which is now certified to my CloudFront distribution.  </li>
+            </ul>
+            <p id="ph1Para"> Concepts Learned: <i> Domain Name Servers (DNS), Amazon S3, CloudFront, Route 53, HTTPS, SSL & Certificate </i>
         </div>
 
         <h2> Phase Architecture </h2>
