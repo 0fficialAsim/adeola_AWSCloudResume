@@ -53,6 +53,9 @@ body {
     
 
 }
+h4{
+    margin-bottom: 0px;
+}
 .container{ 
     text-align: center;
      
@@ -154,8 +157,9 @@ body {
 .Experience .listings,
 .Projects .listings,
 .Skills .listings {
-    width: 100%;
+    width: 800px;
     font-size: 18px;
+    margin-right: 10%;
 }
 
 .Education .resumeTitle,

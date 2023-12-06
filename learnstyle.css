@@ -1,0 +1,74 @@
+* {
+    font-family: system-ui;
+}
+
+body {
+    margin-top: 30px;
+    padding-top: 10px;
+    height: 100vh;
+    background-color: #F3EEEA;
+    padding-bottom:10px;/* Add or adjust this line to set the bottom margin */
+
+}
+#title{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: ;
+}
+.outer {
+    position: relative;
+    padding: 0 4vw;
+    /*background-color: aqua;*/
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px ;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #24231f;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    position: relative;
+    color: #F3EEEA;
+    /* Color option 2 96897b*/
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.Phase1 .paraContainer{
+    margin-right: 15%;
+
+}
+.Phase1 .paraContainer p{
+    margin-right:5%;
+    width: 85%;
+    font-size: 18px;
+    color:#282723;
+}
+.Phase1 .paraContainer .Codeimgs{
+    position:relative;
+    /*margin-left: 50px;*/
+    border-radius: 5px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #24231f;
+
+}
+.subscript-text {
+ margin-top: 0;
+ text-align: center;
+ padding-right: 20%;
+}
