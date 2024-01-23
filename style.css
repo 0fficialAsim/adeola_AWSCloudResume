@@ -57,18 +57,21 @@ h3{
     margin-bottom: 0px;
 }
 .container{ 
+    display: flex;
+    flex-direction: column;
     text-align: center;
      
 }
 .container h1 { 
-    font-size: 40px;
+    font-size: 50px;
 }
 .container p { 
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .links{
     display: flex;
+    align-self: center;
 }
 
 .links a{

@@ -6,12 +6,13 @@ async function updateVisitors(){
     });
 
     const visitors = await response.json(); 
+    
     return visitors;
 }
 
-async function getCount(){
-    const count = updateVisitors(); 
-    document.getElementById('count').innerText; 
+function getCount(){
+    const count =  updateVisitors().then((data) =>  
+    document.getElementById('count').innerText = "Welcome! You are visitor number " + (data)) 
 }
 
 getCount();
