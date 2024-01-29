@@ -56,7 +56,34 @@
 
 
     <div class="Phase2"> 
-      
+        <h1  style="text-decoration: underline; font-weight: 600;">Phase 2: Creating the API and Visitor Counter</h1>
+
+        <div class = "paraContainer">
+            
+            <p id="ph1Para">This phase of the cloud resume challenge was by far the most difficult for me to understand. Before starting the challenge I had no idea what an API was and how its used to communicate between applications. To add on, I also learned that JSON files are mainly used to share information across computers on the internet. Responses and requests was a concept I read up on but regardless lets get my API set up! </p>
+            <p id="ph1Para">In terms of the AWS services used, I first needed to learn how to create tables using the noSQL DynamoDB. With it, I can store the total number of visitors who have accessed my website. Next, I would need to leverage the AWS Lambda service in order to create a serverless function that would have access to my VisitorCount table. I needed to learn what boto3 , AWS SDK or software development kit was. So, I set up their CLI on my desktop and played around with it by creating S3 buckets in VSCODE, and seeing how to list names, create DynamoDB tables, etc. Once I had a very basic understanding, I used my lambda function to connect to my table as you can see below: </p>
+
+            <div class="Codeimgs"> <img src="images\htmlcode.png" style="height:433px; border-radius: 5px;"> </img> <img src="images\csscode.png" style="height:433px; border-radius: 5px;"> </img></div>
+            
+            <p id="ph1Para">
+                Next, I needed to setup a trigger for the lambda function which would be the API Gateway Service. It created an invoke URL that I would later on use in my JavaScript function to call the lambda function when the site loads up. Moving on to another difficult roadblock I faced, JavaScript. I still need to solidify my understanding. Essentially, I made a asynchronous function that would send a Fetch POST request to my API gateway, as a response I would get back a JSON containing  the visitor count which would be stored in a promise object.  I then used,  .then() function to access the JSON data from the promise object and display it on the main page of the document. 
+                 </p>
+                 
+            <ul> 
+            <li id= "ph1Para">Put my files into an S3 Bucket and adjust the policies so that it can be publicly accessible.  </li>
+            <li id= "ph1Para">After purchasing my domain on route 53, I would need to get it certified it with the Amazon Certificate Manager (ACM) </li>
+                 <ul>
+                    <li id= "ph1Para" >When a user connects to a webpage, the webpage will send over its SSL certificate which contains the public key necessary to start the secure session.
+                        The two computers, the client and the server, then go through a process called an SSL/TLS handshake, which is a series of back-and-forth communications used to establish a secure connection.  </li>
+                    </li>
+                 </ul>
+            <li> Create my CloudFront distribution which points to my S3 bucket, it would also ensure that viewers access the website through HTTPS.
+            </li>
+            <li>Connect my domain name which is now certified to my CloudFront distribution.  </li>
+            </ul>
+            <p id="ph1Para"> Concepts Learned: <i> AWS Lambda, API Gateway, Fetch() & JavaSript, JSON Response & Requests </i>
+        </div>
+
     </div>
 
 
